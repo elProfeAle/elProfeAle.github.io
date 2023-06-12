@@ -12,3 +12,13 @@
 .main {
     text-align: center;
 }
+
+.enlaceExterno{
+    display: flex;
+    justify-content: center;
+    
+}
+.btn-primary {
+    width: 40%;
+    margin-top: 2%;
+}

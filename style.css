@@ -15,7 +15,7 @@
     justify-content: center;
     
 }
-.btn-primary {
+.repo {
     width: 40%;
     margin-top: 2%;
 }
@@ -23,4 +23,8 @@
 .col-3{
     display: flex;
     align-items: center;
+}
+
+.boton-color{
+    width: 100%;
 }

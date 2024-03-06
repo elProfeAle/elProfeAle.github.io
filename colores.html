@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guía básica boostrap</title>
+    <title>Guía básica bootstrap</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
@@ -35,31 +35,25 @@
     </nav>
 
     <div class="container">
-        <div class="bg-warning rounded p-3 p mt-3 mb-3 shadow border border-danger text-center">
 
-            <p class="lead text-white"><strong>El siguiente sitio se encuentra en construcción,
-                    mediante pase el tiempo se estará subiendo más contenido para
-                    trabajar.
-                    Recuerda que en GitHug <i class="bi bi-github"></i> están subidos los archivos utilizados
-                    por este sitio.
-                    <a class="enlaceExterno" target="_blank" href="https://github.com/elProfeAle/elProfeAle.github.io">
-                        <button class="btn btn-primary">Repositorio github <i class="bi bi-github"></i> </button>
-                    </a>
-
-                </strong></p>
-        </div>
-        <h1 class="display-3 text-center">Colores</h1>
+        <!-- <h1 class="display-3 text-center">Colores</h1>
         <p class="lead text-center">Bootstrap nos provee una selección de colores para utilizar en distintos elementos, texto, botones, fondo, etc. El color seleccionado para cada categoria, transmite significado, como el color
             <em>danger</em> el cual nos inspira peligro, y por ende, que no debemos seguir con determinada acción.
-        </p>
+        </p>-->
 
         <!--
         <button class="copiado btn btn-primary" type="submit">Copiar <i id="cambiar"
                 class="bi bi-clipboard"></i></button>
         -->
-        <div class="hero rounded shadow mt-4 p-2 ">
+        <div class="hero rounded border shadow my-4 p-4 ">
+            <div class="row">
+                <h1 class="display-1 fw-semibold">Colores</h1>
+                <p class="lead text-wrap">Bootstrap nos provee una selección de colores para utilizar en distintos elementos, texto, botones, fondo, etc. El color seleccionado para cada categoria, transmite significado, como el color
+                    <em>danger</em> el cual nos inspira peligro, y por ende, que no debemos seguir con determinada acción.
+                </p>
+            </div>
             <div class="row mb-2">
-                <h1 class="display-3">Botones</h1>
+                <h1 class="display-4 fw-semibold">Botones</h1>
                 <p class="lead">
                     Podremos utilizar distintos colores para los botones en bootstrap, utilizando la clase <code class="language-html">btn</code>.
                 </p>
@@ -77,7 +71,7 @@
                     <div class="row mx-4 mb-4">
                         <pre class="rounded">
                             <code class="language-html">                    
-    &ltdiv class="row mb-2"&gt
+&ltdiv class="row mb-2"&gt
     &ltdiv class="col"&gt
         &ltbutton class="boton-color btn btn-primary"&gtPrimary&lt/button&gt
     &lt/div&gt
@@ -143,6 +137,20 @@
             </div>
         </div>
     </div>
+    <div class="bg-warning rounded p-3 p mt-3 mb-3 shadow border border-danger text-center">
+
+        <p class="lead text-white"><strong>El siguiente sitio se encuentra en construcción,
+                mediante pase el tiempo se estará subiendo más contenido para
+                trabajar.
+                Recuerda que en GitHug <i class="bi bi-github"></i> están subidos los archivos utilizados
+                por este sitio.
+                <a class="enlaceExterno" target="_blank" href="https://github.com/elProfeAle/elProfeAle.github.io">
+                    <button class="btn btn-primary">Repositorio github <i class="bi bi-github"></i> </button>
+                </a>
+
+            </strong></p>
+    </div>
+
     <footer class="bg-primary bg-gradient text-center text-white text-lg-start">
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">

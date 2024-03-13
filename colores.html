@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guía básica bootstrap</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="prism.css">
@@ -19,7 +20,8 @@
             <a class="navbar-brand" href="index.html">
                 <img src="/imagenes/ivt.png" alt="Logo" width="50" height="50">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -35,27 +37,21 @@
     </nav>
 
     <div class="container">
-
-        <!-- <h1 class="display-3 text-center">Colores</h1>
-        <p class="lead text-center">Bootstrap nos provee una selección de colores para utilizar en distintos elementos, texto, botones, fondo, etc. El color seleccionado para cada categoria, transmite significado, como el color
-            <em>danger</em> el cual nos inspira peligro, y por ende, que no debemos seguir con determinada acción.
-        </p>-->
-
-        <!--
-        <button class="copiado btn btn-primary" type="submit">Copiar <i id="cambiar"
-                class="bi bi-clipboard"></i></button>
-        -->
         <div class="hero rounded border shadow my-4 p-4 ">
             <div class="row">
                 <h1 class="display-1 fw-semibold">Colores</h1>
-                <p class="lead text-wrap">Bootstrap nos provee una selección de colores para utilizar en distintos elementos, texto, botones, fondo, etc. El color seleccionado para cada categoria, transmite significado, como el color
-                    <em>danger</em> el cual nos inspira peligro, y por ende, que no debemos seguir con determinada acción.
+                <p class="lead text-wrap">Bootstrap nos provee una selección de colores para utilizar en distintos
+                    elementos, texto, botones, fondo, etc. El color seleccionado para cada categoria, transmite
+                    significado, como el color
+                    <em>danger</em> el cual nos inspira peligro, y por ende, que no debemos seguir con determinada
+                    acción.
                 </p>
             </div>
             <div class="row mb-2">
                 <h1 class="display-4 fw-semibold">Botones</h1>
                 <p class="lead">
-                    Podremos utilizar distintos colores para los botones en bootstrap, utilizando la clase <code class="language-html">btn</code>.
+                    Podremos utilizar distintos colores para los botones en bootstrap, utilizando la clase <code
+                        class="language-html">btn</code>.
                 </p>
                 <div class="col">
                     <div class="row mx-4 mt-4 p-1 bg-secondary rounded">
@@ -64,7 +60,9 @@
                             <div class="col-8 text-light">
                                 html
                             </div>
-                            <div class="col-4 d-flex justify-content-end"><button class="btn btn-secondary copiado">Copiar <i id="cambiar" class="bi bi-clipboard"></i></button>
+                            <div class="col-4 d-flex justify-content-end"><button
+                                    class="btn btn-secondary copiado">Copiar <i id="cambiar"
+                                        class="bi bi-clipboard"></i></button>
                             </div>
                         </div>
                     </div>
@@ -73,30 +71,30 @@
                             <code class="language-html">                    
 &ltdiv class="row mb-2"&gt
     &ltdiv class="col"&gt
-        &ltbutton class="boton-color btn btn-primary"&gtPrimary&lt/button&gt
+        &ltbutton class="btn btn-primary"&gtPrimary&lt/button&gt
     &lt/div&gt
     &ltdiv class="col"&gt
-        &ltbutton class="boton-color btn btn-info"&gtInfo&lt/button&gt
+        &ltbutton class="btn btn-info"&gtInfo&lt/button&gt
     &lt/div&gt
     &ltdiv class="col"&gt
-        &ltbutton class="boton-color btn btn-success"&gtSuccess&lt/button&gt
+        &ltbutton class="btn btn-success"&gtSuccess&lt/button&gt
     &lt/div&gt
     &ltdiv class="col"&gt
-        &ltbutton class="boton-color btn btn-danger"&gtDanger&lt/button&gt
+        &ltbutton class="btn btn-danger"&gtDanger&lt/button&gt
     &lt/div&gt
 &lt/div&gt
 &ltdiv class="row mt-1"&gt
     &ltdiv class="col"&gt
-        &ltbutton class="boton-color btn btn-warning"&gtWarning&lt/button&gt
+        &ltbutton class="btn btn-warning"&gtWarning&lt/button&gt
     &lt/div&gt
     &ltdiv class="col"&gt
-        &ltbutton class="boton-color btn btn-secondary"&gtSecondary&lt/button&gt
+        &ltbutton class="btn btn-secondary"&gtSecondary&lt/button&gt
     &lt/div&gt
     &ltdiv class="col"&gt
-        &ltbutton class="boton-color btn btn-dark"&gtDark&lt/button&gt
+        &ltbutton class="btn btn-dark"&gtDark&lt/button&gt
     &lt/div&gt
     &ltdiv class="col"&gt
-        &ltbutton class="boton-color btn btn-light"&gtLight&lt/button&gt
+        &ltbutton class="btn btn-light"&gtLight&lt/button&gt
     &lt/div&gt
 &lt/div&gt
                             </code>
@@ -136,21 +134,21 @@
                 </div>
             </div>
         </div>
+
+        <div class="bg-warning rounded p-3 p mt-3 mb-3 shadow border border-danger text-center">
+
+            <p class="lead text-white"><strong>El siguiente sitio se encuentra en construcción,
+                    mediante pase el tiempo se estará subiendo más contenido para
+                    trabajar.
+                    Recuerda que en GitHug <i class="bi bi-github"></i> están subidos los archivos utilizados
+                    por este sitio.
+                    <a class="enlaceExterno" target="_blank" href="https://github.com/elProfeAle/elProfeAle.github.io">
+                        <button class="btn btn-primary">Repositorio github <i class="bi bi-github"></i> </button>
+                    </a>
+
+                </strong></p>
+        </div>
     </div>
-    <div class="bg-warning rounded p-3 p mt-3 mb-3 shadow border border-danger text-center">
-
-        <p class="lead text-white"><strong>El siguiente sitio se encuentra en construcción,
-                mediante pase el tiempo se estará subiendo más contenido para
-                trabajar.
-                Recuerda que en GitHug <i class="bi bi-github"></i> están subidos los archivos utilizados
-                por este sitio.
-                <a class="enlaceExterno" target="_blank" href="https://github.com/elProfeAle/elProfeAle.github.io">
-                    <button class="btn btn-primary">Repositorio github <i class="bi bi-github"></i> </button>
-                </a>
-
-            </strong></p>
-    </div>
-
     <footer class="bg-primary bg-gradient text-center text-white text-lg-start">
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
@@ -160,7 +158,9 @@
         <!-- Copyright -->
     </footer>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
 <script src="script.js"></script>
 <script src="date.js"></script>
 <script src="prism.js"></script>

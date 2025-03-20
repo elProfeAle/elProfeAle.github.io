@@ -9,6 +9,8 @@
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/prism.css">
     <link rel="shortcut icon" href="/imagenes/ivt.png" type="image/x-icon">
 </head>
 
@@ -49,52 +51,55 @@
         <div class="hero rounded border shadow p-4 my-4 ">
             <div class="row">
                 <h1 class="display-1 fw-semibold">¿Que es HTML? <i class="bi bi-code-slash" style="color:red"></i></h1>
-                <p class="lead"><em>HTML (Lenguaje de Marcas de Hipertexto, del inglés HyperText Markup Language)</em> es el
-                    componente más básico de la Web. Define el significado y la estructura del contenido web.
+                <p class="lead"><em>HTML (Lenguaje de Marcas de Hipertexto, del inglés HyperText Markup Language)</em>
+                    es el
+                    componente más básico de la Web. Define el significado y la estructura del contenido web. Imagina
+                    que es como el "esqueleto" de un sitio: organiza el contenido (títulos, textos, imágenes, enlaces)
+                    para que el navegador lo muestre correctamente.
                 </p>
             </div>
             <div class="row">
-                <h1 class="display-4 fw-semibold">¿Para que sirve este sitio?</h1>
-                <p class="lead">
-                    El siguiente sitio web contiene información en español de varios conceptos de Bootstrap
-                    vistos en
-                    <em><strong>Programación II</strong></em>. <br>
-                </p>
+                <h2>¿Cómo empezar?</h2>
+                <h3>1. Herramientas necesarias:</h3>
+                <ul class="mx-4">
+                    <li class="lead">Un editor de texto simple (como Notepad, VS Code, bloc de notas o cualquier otro).
+                    </li>
+                    <li class="lead">Un navegador web (Chrome, Edge o Firefox)</li>
+                </ul>
+                <h3>2. Crea un archivo HTML:</h3>
+                <ul class="mx-4">
+                    <li class="lead">Escribe tu código en el editor.</li>
+                    <li class="lead">Guárdalo con la extensión .html (ejemplo: mipagina.html).</li>
+                    <li class="lead">Ábrelo en el navegador para ver el resultado.</li>
+                </ul>
+                <h3>3. Estructura básica de archivo HTML:</h3>
+                <pre class="rounded">
+                    <code class="language-html codigo">
+&lt!DOCTYPE html&gt
+&lthtml&gt
+&lthead&gt
+    &lttitle&gtMi primera página web&lt/title&gt
+&lt/head&gt
+&ltbody&gt
+    &lth1&gtHola, mundo&lt/h1&gt
+    &ltp&gtEsta es mi primera página web.&lt/p&gt
+&lt/body&gt
+&lt/html&gt
+                    </code>
+                </pre>
+                <ul class="mx-4">
+                    <li class="lead">
+                        <b>&lt!DOCTYPE html&gt</b>: Declara que es un documento HTML5.</li>
+                    <li class="lead"><b>&lthtml&gt</b>: Contenedor principal de la página.</li>
+
+                    <li class="lead"> <b>&lthead&gt</b>: Incluye metadatos, como el título que aparece en la pestaña del navegador.</li>
+
+                    <li class="lead"><b>&ltbody&gt</b>: Aquí va el contenido visible (textos, imágenes, etc.). </li>
+                </ul>
+
             </div>
         </div>
 
-        <div class="card-group shadow">
-            <div class="card">
-                <div class="card-body">
-                    <img class="card-img-top" src="/imagenes/colorPallete.png" alt="">
-                    <h1 class="card-title display-6 fw-semibold">Colores</h1>
-                    <p class="card-text lead">En este apartado, vamos a conocer los distintos colores que ofrece
-                        bootstrap y como aplicarlos ya sea en textos o fondos, desde colores sólidos y degradados.
-                    </p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <img class="card-img-top" src="/imagenes/tipografia.png" alt="">
-                    <h1 class="card-title display-6 fw-semibold">Tipografía</h1>
-                    <p class="card-text lead">
-                        Esta sección contiene todo lo relacionado a la tipografía. Relacionado a titulos, párrafos, las
-                        distintas clases que podemos utilizar en ellos, cambiar estilo de la fuente, tamaños, entre
-                        otras cosas.
-                    </p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <img class="card-img-top" src="/imagenes/code.png" alt="">
-                    <h1 class="card-title display-6 fw-semibold">Componentes</h1>
-                    <p class="card-text lead">
-                        Acá vamos a analizar los distintos componentes que podemos utilizar junto a bootstrap, barras de
-                        navegación, botones, carrousel, etc.
-                    </p>
-                </div>
-            </div>
-        </div>
         <div class="bg-warning rounded p-3 p mt-3 mb-3 shadow border border-danger text-center">
 
             <p class="lead text-white"><strong>El siguiente sitio se encuentra en construcción,
@@ -123,6 +128,9 @@
     crossorigin="anonymous"></script>
 
 <script src="date.js"></script>
+<script id="js1" src="/assets/js/script.js"></script>
+<script id="js2" src="/assets/js/date.js"></script>
+<script id="js3" src="/assets/js/prism.js"></script>
 
 </html>
 <!--

@@ -7,6 +7,7 @@
     <title>Guía básica bootstrap</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="html.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/style.css">
@@ -73,9 +74,9 @@
                     <li class="lead">Ábrelo en el navegador para ver el resultado.</li>
                 </ul>
                 <h3>3. Estructura básica de archivo HTML:</h3>
-                <pre class="rounded">
-                    <code class="language-html codigo">
-&lt!DOCTYPE html&gt
+                <div class="row code">
+                    <div class="col-7">
+                        <pre class="rounded"><code class="language-html codigo">&lt!DOCTYPE html&gt
 &lthtml&gt
 &lthead&gt
     &lttitle&gtMi primera página web&lt/title&gt
@@ -84,9 +85,27 @@
     &lth1&gtHola, mundo&lt/h1&gt
     &ltp&gtEsta es mi primera página web.&lt/p&gt
 &lt/body&gt
-&lt/html&gt
-                    </code>
-                </pre>
+&lt/html&gt</code></pre>
+                    </div>
+                    <div class="col-5 my-2 p-4 border rounded">
+                        <h1>Hola, mundo</h1>
+                        <p>Esta es mi primera página web.</p>
+                    </div>
+                </div>
+
+
+
+                <div class="row code">
+                    <div class="col-7">
+                        <!--Codigo-->
+
+                    </div>
+                    <div class="col-4 border rounded">
+                        <!--Resultado-->
+
+                    </div>
+                </div>
+
                 <ul class="mx-4">
                     <li class="lead">
                         <b>&lt!DOCTYPE html&gt</b>: Declara que es un documento HTML5.
@@ -104,38 +123,71 @@
                     <li>Títulos: Hay 6 niveles de encabezados (&lth1> a &lth6>), siendo &lth1> el más
                         grande e
                         importante. <br>
-                        <pre class="rounded mx-4">
-                                        <code class="language-html codigo">
-&lth1&gtTítulo principal&lt/h1&gt
+                        <div class="row code">
+                            <div class="col-7">
+                                <!--Codigo-->
+                                <pre class="rounded mx-4"><code class="language-html codigo">&lth1&gtTítulo principal&lt/h1&gt
 &lth2&gtSubtítulo&lt/h2&gt
-&lth3&gtMás pequeño&lt/h3&gt
-                                        </code></pre>
+&lth3&gtMás pequeño&lt/h3&gt</code></pre>
+                            </div>
+                            <div class="col-4 border rounded">
+                                <!--Resultado-->
+                                <h1>Título principal</h1>
+                                <h2>Subtítulo</h2>
+                                <h3>Más pequeño</h3>
+                            </div>
+                        </div>
+
                     </li>
                     <li>Párrafos: Para escribir bloques de texto.
                         <br>
-                        <pre class="rounded mx-4">
-                                        <code class="language-html codigo">
-&ltp&gtEste es un párrafo simple.&lt/p&gt
-                                        </code>
-                        </pre>
+                        <div class="row code">
+                            <div class="col-7">
+                                <!--Codigo-->
+                                <pre
+                                    class="rounded mx-4"><code class="language-html codigo">&ltp&gtEste es un párrafo simple.&lt/p&gt</code></pre>
+                            </div>
+                            <div class="col-4 pt-4 border rounded">
+                                <!--Resultado-->
+                                <p>Este es un párrafo simple.</p>
+                            </div>
+                        </div>
+
                     </li>
                     <li>Enlaces: Conectan tu página con otras webs o recursos. El enlace debe ir en la propiedad href, y
-                        entre las etiquetas &lt&gta&lt/&gt el texto a mostrar en el enlace.
+                        entre las etiquetas &lta&gt&lt/a&gt el texto a mostrar en el enlace.
                         <br>
-                        <pre class="rounded mx-4">
-                                        <code class="language-html codigo">
-&lta href="https://www.ejemplo.com"&gtHaz clic aquí&lt/a&gt
-                                        </code>
-                        </pre>
+                        <div class="row code">
+                            <div class="col-7">
+                                <!--Codigo-->
+                                <pre
+                                    class="rounded mx-4"><code class="language-html codigo">&lta href="https://www.ejemplo.com"&gtHaz clic aquí&lt/a&gt</code></pre>
+                            </div>
+                            <div class="col-4 pt-4 border rounded">
+                                <!--Resultado-->
+                                <a href="https://www.ejemplo.com">Haz clic aquí</a>
+                            </div>
+                        </div>
+
                     </li>
                     <li>Imágenes: Añade elemntos visuales, podemos cargar enlaces de imagen o archivos, en la propiedad
                         src="", esta etiqueta no requiere cierre.
                         <br>
-                        <pre class="rounded mx-4">
-                                        <code class="language-html codigo">
-&ltimg src="https://via.placeholder.com/150" alt="Imagen de ejemplo"&gt
-                                        </code>
-                        </pre>
+                        <div class="row code">
+                            <div class="col-7">
+                                <!--Codigo-->
+
+                                <pre
+                                    class="rounded mx-4"><code class="language-html codigo">&ltimg src="https://cdn-icons-png.flaticon.com/512/1197/1197396.png" alt="Imagen de ejemplo"&gt</code></pre>
+
+                            </div>
+                            <div class="col-4 border rounded p-4">
+                                <!--Resultado-->
+                                <img width="50px" src="https://cdn-icons-png.flaticon.com/512/1197/1197396.png"
+                                    alt="Imagen de ejemplo">
+                            </div>
+                        </div>
+
                     </li>
                     <li>
                         Listas: Pueden tener o no tener orden, y cada elemento de la lista, debe estar entre las
@@ -143,25 +195,44 @@
                         <ul>
                             <li>Ordenadas (numeradas)
                                 <br>
-                                <pre class="rounded mx-4">
-                                        <code class="language-html codigo">
-&ltol&gt
+                                <div class="row code">
+                                    <div class="col-7">
+                                        <!--Codigo-->
+                                        <pre class="rounded mx-4"><code class="language-html codigo">&ltol&gt
     &ltli&gtPrimero&lt/li&gt
     &ltli&gtSegundo&lt/li&gt
-&lt/ol&gt
-                                        </code>
-                        </pre>
+&lt/ol&gt</code></pre>
+                                    </div>
+                                    <div class="col-4 pt-4 border rounded">
+                                        <!--Resultado-->
+                                        <ol>
+                                            <li>Primero</li>
+                                            <li>Segundo</li>
+                                        </ol>
+                                    </div>
+                                </div>
+
                             </li>
                             <li>Desordenadas (con viñetas)
                                 <br>
-                                <pre class="rounded mx-4">
-                                        <code class="language-html codigo">
-&ltul&gt
+                                <div class="row code">
+                                    <div class="col-7">
+                                        <!--Codigo-->
+                                        <pre class="rounded mx-4"><code class="language-html codigo">&ltul&gt
     &ltli&gtManzana&lt/li&gt
     &ltli&gtPera&lt/li&gt
-&lt/ul&gt
-                                        </code>
-                        </pre>
+&lt/ul&gt</code></pre>
+
+                                    </div>
+                                    <div class="col-4 pt-4 border rounded">
+                                        <!--Resultado-->
+                                        <ul>
+                                            <li>Manzana</li>
+                                            <li>Pera</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
                             </li>
                         </ul>
                     </li>
@@ -175,11 +246,19 @@
                             </li>
                         </ul>
                         <br>
-                        <pre class="rounded mx-4">
-                                        <code class="language-html codigo">
-&ltp&gtMe gusta el &ltb&gtfútbol&lt/b&gt y la &lti&gtmúsica&lt/i&gt.&lt/p&gt
-                                        </code>
-                        </pre>
+                        <div class="row code">
+                            <div class="col-7">
+                                <!--Codigo-->
+                                <pre class="rounded mx-4"><code class="language-html codigo">&ltp&gtMe gusta el &ltb&gtfútbol&lt/b&gt 
+y la &lti&gtmúsica&lt/i&gt.&lt/p&gt</code></pre>
+                            </div>
+                            <div class="col-4 pt-4 border rounded">
+                                <!--Resultado-->
+                                <p>Me gusta el <b>fútbol</b>
+                                    y la <i>música</i>.</p>
+                            </div>
+
+
                     </li>
                     <li>Líneas y divisiones:
                         <ul>
@@ -189,20 +268,32 @@
                             </li>
                         </ul>
                         <br>
-                        <pre class="rounded mx-4">
-                                        <code class="language-html codigo">
-&ltp&gtPrimera línea&ltbr&gtSegunda línea&lt/p&gt
+                        <div class="row code">
+                            <div class="col-7">
+                                <!--Codigo-->
+                                <pre class="rounded mx-4"><code class="language-html codigo">&ltp&gtPrimera línea&ltbr&gtSegunda línea&lt/p&gt
     &lthr&gt
-&ltp&gtOtro párrafo después de la línea.&lt/p&gt
-                                        </code>
-                        </pre>
+&ltp&gtOtro párrafo después de la línea.&lt/p&gt</code></pre>
+                            </div>
+                            <div class="col-4 pt-4 border rounded">
+                                <!--Resultado-->
+                                <p>Primera línea<br>Segunda línea</p>
+                                <hr>
+                                <p>Otro párrafo después de la línea.</p>
+                            </div>
+                        </div>
+
                     </li>
-                    <li>Tablas: Permiten crear filas y columnas para una tabla. La etiqueta principal &lttable&gt
+
+                    <li>Tablas: Permiten crear filas y columnas para una tabla. La etiqueta principal
+                        &lttable&gt
                         &lt/table&gt, debe contener toda la tabla y esta se divide en diferentes partes:
                         <ul>
-                            <li>Filas: Tendremos que definir cada fila de la tabla utilizando &lttr&gt &lt/tr&gt. Esto
+                            <li>Filas: Tendremos que definir cada fila de la tabla utilizando &lttr&gt
+                                &lt/tr&gt. Esto
                                 significa table row (fila de la tabla).</li>
-                            <li>Columnas: Podremos agregar las columnas o datos de la tabla con diferentes tipos:
+                            <li>Columnas: Podremos agregar las columnas o datos de la tabla con diferentes
+                                tipos:
                                 <ul>
                                     <li>Encabezado: Utiliza la etiqueta &ltth&gt&lt/th&gt. </li>
                                     <li>Datos: utilizando la etiqueta &lttd&gt&lt/td&gt.</li>
@@ -211,9 +302,10 @@
 
                         </ul>
                         <br>
-                        <pre class="rounded mx-4">
-                                        <code class="language-html codigo">
-&lttable&gt
+                        <div class="row code">
+                            <div class="col-7">
+                                <!--Codigo-->
+                                <pre class="rounded mx-4"><code class="language-html codigo">&lttable&gt
  &lttr&gt &lt!-- Fila --&gt
      &ltth&gtNombre&lt/th&gt &lt!-- Encabezado --&gt
      &ltth&gtEdad&lt/th&gt
@@ -222,9 +314,23 @@
      &lttd&gtJuan&lt/td&gt &lt!-- Dato --&gt
      &lttd&gt15&lt/td&gt
  &lt/tr&gt
-&lt/table&gt
-                                        </code>
-                        </pre>
+&lt/table&gt</code></pre>
+                            </div>
+                            <div class="col-4 pt-4 border rounded">
+                                <!--Resultado-->
+                                <table>
+                                    <tr> <!-- Fila -->
+                                        <th>Nombre</th> <!-- Encabezado -->
+                                        <th>Edad</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Juan</td> <!-- Dato -->
+                                        <td>15</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
                     </li>
                 </ol>
             </div>

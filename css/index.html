@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía básica CSS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="html.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/prism.css">
+    <link rel="shortcut icon" href="../imagenes/ivt.png" type="image/x-icon">
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg bg-info bg-gradient navbar-dark">
+        <div class="container fluid">
+            <a class="navbar-brand" href="#">
+                <img src="/imagenes/ivt.png" alt="Logo" width="50" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="componentes.html">HTML</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Bootstrap
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../bootstrap/colores.html">Colores</a></li>
+                            <li><a class="dropdown-item" href="../bootstrap/componentes.html">Componentes</a></li>
+                            <!--<li><hr class="dropdown-divider"></li>-->
+                            <li><a class="dropdown-item" href="../bootstrap/tipografia.html">Tipografia</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="tipografia.html">JavaScript</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="hero rounded border shadow p-4 my-4 ">
+            <div class="row">
+                <h1 class="display-1 fw-semibold">¿Que es CSS? <i class="bi bi-filetype-css" style="color:#25cef1"></i>
+                </h1>
+                <p class="lead"><em>Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS</em> es el
+                    lenguaje de estilos
+                    utilizado para describir la presentación de documentos HTML o XML (incluyendo varios lenguajes
+                    basados en XML como SVG, MathML o XHTML). CSS describe cómo debe ser renderizado el elemento
+                    estructurado en la pantalla, en papel, en el habla o en otros medios.
+                </p>
+            </div>
+            <div class="row">
+                <h2>¿Cómo empezar con CSS?</h2>
+
+                <ol class="mx-4">
+                    <li class="lead"> <strong>Conectar CSS a HTML:</strong> Hay tres formas principales de usar CSS:
+                        <ul>
+                            <li><strong>En Linea</strong>: Dentro de una etiqueta HTML con el atributo style <br>
+                                <div class="row code">
+                                    <div class="col-8">
+                                        <!--Codigo-->
+                                        <pre
+                                            class="rounded"><code class="language-html codigo">&ltp style="color: blue;"&gtTexto azul&lt/p&gt&lt/li&gt</code></pre>
+                                    </div>
+                                    <div class="col-3 pt-4 border rounded">
+                                        <!--Resultado-->
+                                        <p style="color: blue;">Texto azul</p>
+                            </li>
+                            <li><strong>Interno</strong>: Dentro de &ltstyle&gt en la sección &lthead&gt del HTML. <br>
+                                <div class="row code">
+                                    <div class="col-8">
+                                        <!--Codigo-->
+                                        <pre class="rounded"><code class="language-html codigo">&ltstyle&gt
+ p { 
+     color: green; 
+   } 
+&lt/style&gt</code></pre>
+                                    </div>
+                                    <div class="col-3 pt-4 border rounded">
+                                        <!--Resultado-->
+                                        <p style="color: green;">Texto verde</p>
+                            </li>
+                            <li><strong>Externo</strong>: En un archivo separado (ejemplo: estilos.css) vinculado con
+                                &ltlink&gt en &lthead&gt. <em>Esta es la opción que vamos a utilizar en la
+                                    clase.</em><br>
+                                <div class="row code">
+                                    <div class="col-8">
+                                        <!--Codigo-->
+                                        <pre class="rounded"><code class="language-html codigo">archivo .html:
+&lthead&gt 
+    &ltlink rel="stylesheet" href="estilos.css"&gt 
+&lt/head&gt
+archivo .css:
+p { 
+    color: red; 
+  }</code></pre>
+                                    </div>
+                                    <div class="col-3 pt-4 border rounded">
+                                        <!--Resultado-->
+                                        <p style="color: red;">Texto rojo</p>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="lead"><strong>Estructura de una regla CSS</strong>:
+                        <ul>
+                            <li>
+                                <pre class="rounded col-6"><code class="language-css">selector{
+    propiedad:valor
+}</code></pre>
+                            </li>
+                            <li><strong>Selector</strong>: Es una parte de una regla CSS que indica al navegador qué
+                                elementos HTML se van a seleccionar para aplicarles una regla.</li>
+                            <li><strong>Propiedad</strong>: es una característica de un elemento HTML que se define con
+                                un <strong>valor</strong> para determinar su estilo o comportamiento</li>
+                            <li><strong>Valor</strong>: Un valor de una propiedad en CSS es el dato específico que le
+                                asignas a una propiedad para definir cómo se aplicará el estilo a un elemento HTML.</li>
+                            <li>
+                                Vamos a hacer un ejemplo, seleccionamos el elemento <strong>p</strong> y cambiamos su
+                                <strong>color</strong> de texto a <strong>rojo</strong>.
+                                <pre class="rounded mx-4 col-6"><code class="language-css">p{
+color: red;
+}</code></pre>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="lead"><strong>Conceptos y propiedades básicas</strong>:
+                        <ul>
+                            <li>
+                                <strong>Colores</strong>: Cambia el color del texto o el fondo
+                                <ul>
+                                    <li>color: Color del texto.</li>
+                                    <li>background-color: Color de fondo.</li>
+                                    <pre class="rounded"><code class="language-css">h1 {
+    color: purple;
+    background-color: yellow;
+}</code></pre>
+                                </ul>
+
+                            </li>
+                            <li>
+                                <strong>Fuentes</strong>: Controla el tamaño y el tipo de letra
+                                <ul>
+                                    <li>font-size: Tamaño del texto (ejemplo: 20px).</li>
+                                    <li>font-family: Tipo de letra (ejemplo: Arial).</li>
+                                    <pre class="rounded"><code class="language-css">p {
+    font-size: 16px;
+    font-family: Arial;
+}</code></pre>
+                                </ul>
+
+                            </li>
+                            <li>
+                                <strong>Tamaño y espaciado</strong>
+                                <ul>
+                                    <li>width: Ancho de un elemento (ejemplo: 200px).</li>
+                                    <li>height: Alto (ejemplo: 100px).</li>
+                                    <li>margin: Espacio exterior (ejemplo: 10px).</li>
+                                    <li>padding: Espacio interior (ejemplo: 15px).</li>
+                                    <pre class="rounded"><code class="language-css">div {
+    width: 300px;
+    height: 150px;
+    margin: 20px;
+    padding: 10px;
+    background-color: lightblue;
+}</code></pre>
+                                </ul>
+
+                            </li>
+                            <li>
+                                <strong>Bordes</strong>: Agrega lineas alrededor de elementos.
+                                <ul>
+                                    <li>border: Define grosor, estilo y color.</li>
+                                    <pre class="rounded"><code class="language-css">img {
+    border: 3px dashed red;
+}</code></pre>
+                                </ul>
+
+                            </li>
+
+                        </ul>
+                    </li>
+                </ol>
+
+            </div>
+        </div>
+        <div class="bg-warning rounded p-3 p mt-3 mb-3 shadow border border-danger text-center">
+
+            <p class="lead text-white"><strong>El siguiente sitio se encuentra en construcción,
+                    mediante pase el tiempo se estará subiendo más contenido para
+                    trabajar.
+                    Recuerda que en GitHub <i class="bi bi-github"></i> están subidos los archivos utilizados
+                    por este sitio.
+                    <a class="enlaceExterno" target="_blank" href="https://github.com/elProfeAle/elProfeAle.github.io">
+                        <button class="btn btn-primary repo">Repositorio github <i class="bi bi-github"></i>
+                        </button>
+                    </a>
+                </strong></p>
+        </div>
+    </div>
+
+    <footer class="bg-primary bg-gradient text-center text-white text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            <span id="year"> </span> - Instituto Visión Tecnológica - Programación II
+            <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+<script src="../assets/js/date.js"></script>
+<script id="js1" src="/assets/js/script.js"></script>
+<script id="js2" src="/assets/js/date.js"></script>
+<script id="js3" src="/assets/js/prism.js"></script>
+
+</html>

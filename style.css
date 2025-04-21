@@ -56,6 +56,13 @@
     text-align: center;   
 }
 
+.inicio {
+    display: flex;
+    justify-content: end;
+}
+.inicio a {
+    background-color: #1C77FD;
+}
 .css a {
     background-color: #23CFF1;
 }
@@ -71,3 +78,4 @@
     background-color: #c41e2f;
    
 }	
+

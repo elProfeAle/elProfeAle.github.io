@@ -38,3 +38,36 @@
     cursor: pointer;
 
 }
+
+.botones{
+    display: flex;
+    justify-content: space-between;
+}
+
+.botones a{
+    text-decoration: none;
+    color: white;    
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background-color: #23CFF1;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    text-align: center;   
+}
+
+.css a {
+    background-color: #23CFF1;
+}
+.html a {
+    background-color: #DE4756;
+}
+
+.css a:hover{
+    background-color: #1DA1F2;
+    
+}
+.html a:hover{
+    background-color: #c41e2f;
+   
+}	

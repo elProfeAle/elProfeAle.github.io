@@ -28,3 +28,13 @@
 .boton-color{
     width: 100%;
 }
+
+i{
+    font-size: 4rem;
+}
+
+.card{
+   
+    cursor: pointer;
+
+}

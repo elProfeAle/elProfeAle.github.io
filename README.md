@@ -1,17 +1,10 @@
 # elProfeAle.github.io
-Pagina de prueba con github pages. 
 
-## Bootstrap
-Guía básica de cómo utilizar bootstrap. 
+## Html
+Guía básica de cómo utilizar Html
 
-### Inicio
-    Agregar detalles 
+## Css
+Guía básica de cómo utilizar Css en Html
 
-### Colores
-    {En construcción}
-
-### Componentes
-    {En construcción}
-
-### Tipografía
-    {En construcción}
+## JavaScript
+Guía básica de cómo utilizar Javascript (En construcción)

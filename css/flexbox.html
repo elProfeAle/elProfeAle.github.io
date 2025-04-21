@@ -50,164 +50,100 @@
     <div class="container">
         <div class="hero rounded border shadow p-4 my-4 ">
             <div class="row">
-                <h1 class="display-1 fw-semibold">¿Que es FlexBox? <i class="bi bi-filetype-css" style="color:#25cef1"></i>
+                <h1 class="display-1 fw-semibold">¿Que es FlexBox? <i class="bi bi-filetype-css"
+                        style="color:#25cef1"></i>
                 </h1>
-                <p class="lead"><em>Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS</em> es el
-                    lenguaje de estilos
-                    utilizado para describir la presentación de documentos HTML o XML (incluyendo varios lenguajes
-                    basados en XML como SVG, MathML o XHTML). CSS describe cómo debe ser renderizado el elemento
-                    estructurado en la pantalla, en papel, en el habla o en otros medios.
+                <p class="lead"><em>Flexbox (o Flexible Box Layout)</em> es una herramienta de CSS que te ayuda a
+                    organizar
+                    elementos en una página web de forma flexible y ordenada, como si fueran piezas de un
+                    rompecabezas que se ajustan automáticamente. Imagina que tienes una caja llena de objetos (como
+                    bloques de Lego) y quieres que se alineen en una fila, columna, o que se distribuyan
+                    equitativamente sin mucho esfuerzo. ¡Eso hace Flexbox!
+                    Flexbox es ideal para:
                 </p>
+                <ul class="lead mx-4">
+                    <li>Alinear elementos horizontal o verticalmente.</li>
+                    <li>Hacer que los elementos se ajusten al espacio disponible.</li>
+                    <li>Crear diseños que se vean bien en pantallas grandes y pequeñas.</li>
+                </ul>
             </div>
             <div class="row">
-                <h2>¿Cómo empezar con CSS?</h2>
-
-                <ol class="mx-4">
-                    <li class="lead"> <strong>Conectar CSS a HTML:</strong> Hay tres formas principales de usar CSS:
-                        <ul>
-                            <li><strong>En Linea</strong>: Dentro de una etiqueta HTML con el atributo style <br>
-                                <div class="row code">
-                                    <div class="col-8">
-                                        <!--Codigo-->
-                                        <pre
-                                            class="rounded"><code class="language-html codigo">&ltp style="color: blue;"&gtTexto azul&lt/p&gt&lt/li&gt</code></pre>
-                                    </div>
-                                    <div class="col-3 pt-4 border rounded">
-                                        <!--Resultado-->
-                                        <p style="color: blue;">Texto azul</p>
-                            </li>
-                            <li><strong>Interno</strong>: Dentro de &ltstyle&gt en la sección &lthead&gt del HTML. <br>
-                                <div class="row code">
-                                    <div class="col-8">
-                                        <!--Codigo-->
-                                        <pre class="rounded"><code class="language-html codigo">&ltstyle&gt
- p { 
-     color: green; 
-   } 
-&lt/style&gt</code></pre>
-                                    </div>
-                                    <div class="col-3 pt-4 border rounded">
-                                        <!--Resultado-->
-                                        <p style="color: green;">Texto verde</p>
-                            </li>
-                            <li><strong>Externo</strong>: En un archivo separado (ejemplo: estilos.css) vinculado con
-                                &ltlink&gt en &lthead&gt. <em>Esta es la opción que vamos a utilizar en la
-                                    clase.</em><br>
-                                <div class="row code">
-                                    <div class="col-8">
-                                        <!--Codigo-->
-                                        <pre class="rounded"><code class="language-html codigo">archivo .html:
-&lthead&gt 
-    &ltlink rel="stylesheet" href="estilos.css"&gt 
-&lt/head&gt
-archivo .css:
-p { 
-    color: red; 
-  }</code></pre>
-                                    </div>
-                                    <div class="col-3 pt-4 border rounded">
-                                        <!--Resultado-->
-                                        <p style="color: red;">Texto rojo</p>
-                            </li>
-
-                        </ul>
+                <h2>¿Cómo funciona flexbox?</h2>
+                <p class="lead">Flexbox trabaja con dos partes principales:</p>
+                <ul class="lead mx-4">
+                    <li>
+                        <b>Contenedor flexible:</b> (&ltdiv&gt u otro elemento con <code
+                            class="language-css">display: flex;</code>): Es la caja
+                        que contiene los elementos.
                     </li>
-                    <li class="lead"><strong>Estructura de una regla CSS</strong>:
-                        <ul>
-                            <li>
-                                <pre class="rounded col-6"><code class="language-css">selector{
-    propiedad:valor
-}</code></pre>
-                            </li>
-                            <li><strong>Selector</strong>: Es una parte de una regla CSS que indica al navegador qué
-                                elementos HTML se van a seleccionar para aplicarles una regla.</li>
-                            <li><strong>Propiedad</strong>: es una característica de un elemento HTML que se define con
-                                un <strong>valor</strong> para determinar su estilo o comportamiento</li>
-                            <li><strong>Valor</strong>: Un valor de una propiedad en CSS es el dato específico que le
-                                asignas a una propiedad para definir cómo se aplicará el estilo a un elemento HTML.</li>
-                            <li>
-                                Vamos a hacer un ejemplo, seleccionamos el elemento <strong>p</strong> y cambiamos su
-                                <strong>color</strong> de texto a <strong>rojo</strong>.
-                                <pre class="rounded mx-4 col-6"><code  class="language-css">p{
-color: red;
-}</code></pre>
-                            </li>
-                            <li>
-                                Tambien podemos seleccionar un elemento específico, utilizando un identificador. El identificador se agrega en alguna etiqueta html: id="nombre" y lo seleccionamos con # en css: 
-                                <pre class="rounded mx-4 col-6"><code class="language-html">&ltp id="texto"&gt Esto es un texto &lt/p&gt</code></pre>
-                                <pre class="rounded mx-4 col-6"><code class="language-css">#texto{
-color: red;
-}</code></pre>
-                            </li>
-                        </ul>
+                    <li>
+                        <b>Elementos hijos </b>(los elementos dentro del contenedor): Son los objetos que Flexbox
+                        organiza.
                     </li>
-                    <li class="lead"><strong>Conceptos y propiedades básicas</strong>:
-                        <ul>
-                            <li>
-                                <strong>Colores</strong>: Cambia el color del texto o el fondo
-                                <ul>
-                                    <li>color: Color del texto.</li>
-                                    <li>background-color: Color de fondo.</li>
-                                    <pre class="rounded mx-2"><code class="language-css">h1 {
-    color: purple;
-    background-color: yellow;
+                </ul>
+                <p class="lead">
+                    Para usar Flexbox, aplicas la propiedad <code class="language-css">display: flex;</code> al
+                    contenedor, y luego usas otras propiedades
+                    para controlar cómo se distribuyen los hijos.
+                </p>
+                <h2>Propieades principales de Flexbox</h2>
+                <ol class="mx-4 lead">
+                    <li><b>Propiedad del contenedor:</b> <code>display</code><br>
+                        Activa Flexbox en el contenedor.
+                        Valor: <code>flex</code>: (organiza los hijos en filas o columnas).
+                        <pre class="mx-4"><code class="language-css">.contenedor {
+    display: flex;
 }</code></pre>
-                                </ul>
-
-                            </li>
-                            <li>
-                                <strong>Fuentes</strong>: Controla el tamaño y el tipo de letra
-                                <ul>
-                                    <li>font-size: Tamaño del texto (ejemplo: 20px).</li>
-                                    <li>font-family: Tipo de letra (ejemplo: Arial).</li>
-                                    <pre class="rounded mx-2"><code class="language-css">p {
-    font-size: 16px;
-    font-family: Arial;
-}</code></pre>
-                                </ul>
-
-                            </li>
-                            <li>
-                                <strong>Tamaño y espaciado</strong>
-                                <ul>
-                                    <li>width: Ancho de un elemento (ejemplo: 200px).</li>
-                                    <li>height: Alto (ejemplo: 100px).</li>
-                                    <li>margin: Espacio exterior (ejemplo: 10px).</li>
-                                    <li>padding: Espacio interior (ejemplo: 15px).</li>
-                                    <pre class="rounded mx-2"><code class="language-css">div {
-    width: 300px;
-    height: 150px;
-    margin: 20px;
-    padding: 10px;
-    background-color: lightblue;
-}</code></pre>
-                                </ul>
-
-                            </li>
-                            <li>
-                                <strong>Bordes</strong>: Agrega lineas alrededor de elementos.
-                                <ul>
-                                    <li>border: Define grosor, estilo y color.</li>
-                                    <pre class="rounded mx-2"><code class="language-css">img {
-    border: 3px dashed red;
-}</code></pre>
-                                </ul>
-
-                            </li>
-
-                        </ul>
                     </li>
-                    <li>Puedes encontrar mas información sobre diversas propiedad en el siguiente enlace: <a
-                            href="https://www.w3schools.com/CSSref/index.php">w3 schools css</a></li>
-                    <li>Tambien podes mirar el siguiente video, que es una guia sencilla de CSS:
-                        <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/3yM5uXp-T_0?si=VigOYpkIn_oX-2l-"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <li><b>Propiedad del contenedor:</b> <code>flex-direction</code><br>
+                        Define si los elementos se alinean en una fila (horizontal) o columna (vertical). <br>
+                        Valores:
+                        <ul>
+                            <li><code>row</code>: (organiza los hijos en filas o columnas).</li>
+                            <li><code>column</code>: (organiza los hijos en filas o columnas).</li>
+                            <li><code>row-reverse</code>: (organiza los hijos en filas o columnas).</li>
+                            <li><code>row-reverse</code>: (organiza los hijos en filas o columnas).</li>
+                        </ul>
+
+                        <pre class="mx-4"><code class="language-css">.contenedor {
+    display: flex;
+    flex-direction: column;
+}</code></pre>
+                    </li>
+                    <li><b>Propiedad del contenedor:</b> <code>justify-content</code><br>
+                        Controla cómo se distribuyen los elementos a lo largo del eje principal (horizontal si es fila,
+                        vertical si es columna). <br>
+                        Valores:
+                        <ul>
+                            <li><code>start</code>: Elementos al inicio.</li>
+                            <li><code>end</code>: Elementos al final.</li>
+                            <li><code>center</code>: Elementos centrados.</li>
+                            <li><code>space-between</code>: Espacio igual entre elementos.</li>
+                            <li><code>space-around</code>: Espacio alrededor de cada elemento.</li>
+                            <li><code>space-evenly</code>: Espacio alrededor y entre los elementos.</li>
+                        </ul>
+
+                        <pre class="mx-4"><code class="language-css">.contenedor {
+    display: flex;
+    justify-content: center;
+}</code></pre>
+                    </li>
+                    <li><b>Propiedad del contenedor:</b> <code>align-items</code><br>
+                        Alinea los elementos en el eje secundario (vertical si es fila, horizontal si es columna). <br>
+                        Valores:
+                        <ul>
+                            <li><code>start</code>: Arriba (o izquierda en columna).</li>
+                            <li><code>end</code>: Abajo (o derecha).</li>
+                            <li><code>center</code>: Centrado.</li>
+                            <li><code>stretch</code>: Estira los elementos para llenar el espacio (predeterminado).</li>
+                        </ul>
+
+                        <pre class="mx-4"><code class="language-css">.contenedor {
+    display: flex;
+    align-items: end;
+}</code></pre>
                     </li>
                 </ol>
-
             </div>
         </div>
         <div class="bg-warning rounded p-3 p mt-3 mb-3 shadow border border-danger text-center">

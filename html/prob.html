@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(236, 236, 236);
+    }
+
+    /*Selecciono el id tituloPrincipal*/
+    #tituloPrincipal{
+        color: rgb(3, 120, 216);
+    }
+
+    /*Selecciono la clase presentacion*/
+    .presentacion{
+        /*Cambia la alineación del texto*/
+        /*En este caso, lo centra*/
+        text-align: center;
+    }
+
+    /*Selecciono la clase servicios*/
+    .servicios{
+        /*Utilizo flex en una caja (DIV)*/
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    /*Selecciono la clase tarjeta*/
+    .tarjeta{
+        width: 200px;
+        /*Utilizo flex en una caja (DIV)*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /*Agregamos un borde a la caja*/
+        border: 1px solid grey;
+        /*El borde lo redondeamos*/
+        border-radius: 8px;
+        /*Damos espaciado entre el borde y el contenido*/
+        padding: 10px;
+        background-color: white;
+    }
+
+    /*Selecciono solo los parrafos que corresponden a la clase tarjeta*/
+    .tarjeta p{
+        /*Justificamos el texto*/
+        text-align: justify;
+    }
+
+</style>
+<body>
+    <!--Div con clase presentación-->
+    <div class="presentacion">
+        <h1 id="tituloPrincipal">Juan Perez</h1>
+        <p>Desarrollador web</p>
+    </div>
+    <!--Div para englobar los servicios-->
+    <div class="servicios">
+        <div class="tarjeta">
+            <h2>Diseño web</h2>
+            <img width="50px" src="https://cdn-icons-png.flaticon.com/512/1969/1969569.png" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit tempora maxime quam provident temporibus
+                fugit, odio non sit optio iusto</p>
+        </div>
+        <div class="tarjeta">
+            <h2>Diseño gráfico</h2>
+            <img width="50px" src="https://cdn-icons-png.flaticon.com/512/5449/5449364.png" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, rerum quae. At, vero. Mollitia nostrum
+                sunt nam inventore quisquam repellat</p>
+        </div>
+    </div>
+</body>
+
+</html>

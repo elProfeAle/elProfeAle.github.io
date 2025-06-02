@@ -14,29 +14,6 @@
     <link rel="stylesheet" href="../assets/css/prism.css">
     <link rel="shortcut icon" href="../imagenes/ivt.png" type="image/x-icon">
 </head>
-<style>
-    .fila-caja {
-        display: flex;
-        justify-content: center;
-    }
-
-    .box {
-        border: 1px solid black;
-        width: 100px;
-        height: 100px;
-        background: #E30520;
-        color: white;
-        transition: all 0.3s ease;
-    }
-
-    .box:hover {
-        transform: scale(1.2) rotate(15deg);
-        background-color: white;
-        color: #E30520;
-        transition: all 0.3s ease;
-
-    }
-</style>
 
 <body>
     <nav class="navbar sticky-top navbar-expand-lg bg-info bg-gradient navbar-dark">
@@ -81,105 +58,11 @@
     </nav>
     <div class="container">
         <div class="hero hero rounded border shadow p-4 my-4">
-            <div class="row">
-                <h1 class="display-1 fw-semibold">Repositorio CSS <i class="bi bi-filetype-css"
-                        style="color:#25cef1"></i>
-                </h1>
-
-                <p class="lead">Repositorio de reglas vistas en clase.</p>
-            </div>
-
-            <h3>:hover</h3>
-            <p class="lead">
-                Es un <strong>pseudo-clase</strong> que se aplica cuando el usuario pasa el mouse por encima de un
-                elemento.
-            </p>
-            <pre><code class="language-css">
-button:hover {
-  background-color: blue;
-}
-</code></pre>
-
-            <h3>transform</h3>
-            <p class="lead">
-                Es una <strong>propiedad</strong> que permite aplicar transformaciones visuales como escalar, rotar,
-                mover o inclinar un elemento.
-            </p>
-            <pre><code class="language-css">
-div {
-  transform: scale(1.2);
-}
-</code></pre>
-
-            <h3>scale()</h3>
-            <p class="lead">
-                Escala un elemento. Aumenta o reduce su tamaño en el eje horizontal (x) y/o vertical (y).
-            </p>
-            <pre><code class="language-css">
-div {
-  transform: scale(1.5); /* 150% en ambos ejes */
-}
-</code></pre>
-            <pre><code class="language-css">
-div {
-  transform: scale(1, 0.5); /* Ancho normal, alto reducido a la mitad */
-}
-</code></pre>
-
-            <h3>rotate()</h3>
-            <p class="lead">
-                Rota un elemento. Se utiliza con unidades en grados (<code>deg</code>).
-            </p>
-            <pre><code class="language-css">
-div {
-  transform: rotate(45deg); /* Gira 45 grados en sentido horario */
-}
-</code></pre>
-
-            <h3>transition</h3>
-            <p class="lead">
-                Agrega una <strong>animación suave</strong> entre dos estados, como el estado normal y el de
-                <code>:hover</code>.
-            </p>
-            <pre><code class="language-css">
-div {
-  transition: transform 0.5s ease;
-}
-</code></pre>
-
-            <h3>Ejemplo </h3>
-            <p class="lead">
-                El siguiente ejemplo muestra una caja que se agranda un 20%, gira 15 grados, y cambia sus colores de
-                fondo y letra al pasar el mouse, con una
-                transición suave:
-            </p>
-            <pre><code class="language-css">
-.box {
-    border: 1px solid black;
-    width: 100px;
-    height: 100px;
-    background: #E30520;
-    color: white;
-    transition: all 0.3s ease;
-}
-.box:hover {
-    transform: scale(1.2) rotate(15deg);
-    background-color: white;
-    color: #E30520;
-    transition: all 0.3s ease;
-}
-</code></pre>
-
-            <div class="row fila-caja">
-                <div class="box">
-                    <h1>Caja</h1>
-                </div>
-            </div>
 
         </div>
         <div class="botones css px-2">
-            <a href="/css/ejemplo.html">Anterior</a>
-            <a href="/css/repaso.html">Siguiente</a>
+            <a href="/css/repositorio.html">Anterior</a>
+            <a href="/css/repositorio.html">Siguiente</a>
         </div>
 
         <div class="bg-warning rounded p-3 p mt-3 mb-3 shadow border border-danger text-center">

@@ -37,7 +37,8 @@
                             <li><a class="dropdown-item" href="../html/index.html">Inicio</a></li>
                             <li><a class="dropdown-item" href="../html/ejemplo.html">Ejemplo</a></li>
                         </ul>
-                    </li>                    <li class="nav-item dropdown">
+                    </li>
+                    <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Css
@@ -59,15 +60,15 @@
     <div class="container">
         <div class="hero rounded border shadow p-4 my-4 ">
             <div class="row">
-                <h1 class="display-1 fw-semibold">Ejemplo de Css con flexbox <i class="bi bi-filetype-css" style="color:#25cef1"></i>
+                <h1 class="display-1 fw-semibold">Ejemplo de Css con flexbox <i class="bi bi-filetype-css"
+                        style="color:#25cef1"></i>
                 </h1>
-                <p class="lead">Podés copiar el contenido del ejemplo y pegarlo en tu archivo .css para probar, retomamos la página utilizada en el ejemplo de html:
+                <p class="lead">Podés copiar el contenido del ejemplo y pegarlo en tu archivo .css para probar,
+                    retomamos la página utilizada en el ejemplo de html:
                 </p>
             </div>
-
             <div class="row">
-                <!--INICIO TITULOS-->
-                <div class="col-6 prueba">
+                <div class="col-12 prueba">
                     <div class="row  p-2 bg-secondary rounded">
                         <div class="d-flex d-flex align-items-center">
 
@@ -81,23 +82,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
-                    <div class="row p-2 bg-info rounded">
-                        <div class="d-flex d-flex align-items-center">
-
-                            <div class="col-8 text-light">
-                                Resultado
-                            </div>
-                            <div class="col-4 d-flex justify-content-end"><button hidden
-                                    class="btn btn-success copiado">Copiar <i id="cambiar"
-                                        class="bi bi-clipboard"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
             <div class="row code">
-                <div class="col-6">
+                <div class="col-12">
                     <!--Codigo-->
                     <pre class="rounded"><code class="language-css codigo">body{
     font-family: Arial, Helvetica, sans-serif;
@@ -125,7 +112,7 @@
 
 /*Selecciono la clase tarjeta*/
 .tarjeta{
-    width: 200px;
+    width: 40%;
     /*Utilizo flex en una caja (DIV)*/
     display: flex;
     flex-direction: column;
@@ -145,7 +132,31 @@
     text-align: justify;
 }</code></pre>
                 </div>
-                <div class="col-6 border rounded">
+
+            </div>
+
+            <!-- ............................................................................-->
+            <div class="row">
+                <!--INICIO TITULOS-->
+
+                <div class="col-12">
+                    <div class="row p-2 bg-info rounded">
+                        <div class="d-flex d-flex align-items-center">
+
+                            <div class="col-8 text-light">
+                                Resultado
+                            </div>
+                            <div class="col-4 d-flex justify-content-end"><button hidden
+                                    class="btn btn-success copiado">Copiar <i id="cambiar"
+                                        class="bi bi-clipboard"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row code">
+
+                <div class="col-12 border rounded">
                     <style>
                         .contenedor {
                             font-family: Arial, Helvetica, sans-serif;
@@ -164,7 +175,7 @@
                             text-align: center;
                         }
 
-                        .presentacion p{
+                        .presentacion p {
                             text-align: center;
                         }
 
@@ -177,7 +188,7 @@
 
                         /*Selecciono la clase tarjeta*/
                         .tarjeta {
-                            width: 200px;
+                            width: 40%;
                             /*Utilizo flex en una caja (DIV)*/
                             display: flex;
                             flex-direction: column;
